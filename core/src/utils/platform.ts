@@ -87,7 +87,7 @@ const isTablet = (win: Window) => {
   return isIpad(win) || isAndroidTablet(win) || (smallest > 460 && smallest < 820 && largest > 780 && largest < 1400);
 };
 
-const isMobile = (win: Window) => matchMedia(win, '(any-pointer:coarse)');
+const isMobile = (win: Window) => matchMedia(win, '(pointer:coarse)');
 
 const isDesktop = (win: Window) => !isMobile(win);
 
